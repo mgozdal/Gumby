@@ -18,14 +18,17 @@
 
 @charset "UTF-8";
 
-@import "modular-scale";
+//@import "modular-scale";
+@import "mathsass/dist/math";
+@import "modularscale-sass/stylesheets/modularscale";
 
 @import "var/settings";
 @import "var/lists";
 @import "var/icons/entypo";
 
-@import "compass";
-@import "compass/reset";
+//@import "compass";
+//@import "compass/reset";
+@import "compass-mixins-fixed/lib/compass";
 
 @import "functions/all";
 

@@ -1,6 +1,20 @@
 {
     "name": "gumby",
+    "version": "2.6.3",
     "description": "A Flexible, Responsive CSS Framework - Powered by Sass",
-    "keywords": ["gumby", "gumby2", "css", "sass"],
-    "version": "2.6.3"
+    "keywords": [
+        "gumby",
+        "gumby2",
+        "css",
+        "sass"
+    ],
+    "scripts": {
+        "build": "node-sass sass/gumby.scss css/gumby.css --include-path=node_modules --output-style=compact"
+    },
+    "dependencies": {
+        "compass-mixins-fixed": "^1.0.1",
+        "mathsass": "^0.10.1",
+        "modularscale-sass": "^3.0.8",
+        "node-sass": "^4.12.0"
+    }
 }
