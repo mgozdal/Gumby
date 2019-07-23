@@ -1,6 +1,7 @@
 /* Base Styles */
 
 //@import "compass/typography/vertical_rhythm";
+@import "compass-mixins-fixed/lib/compass/typography/vertical_rhythm";
 @include establish-baseline;
 
 * {
