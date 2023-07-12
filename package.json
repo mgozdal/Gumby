@@ -9,7 +9,7 @@
         "sass"
     ],
     "scripts": {
-        "build": "node-sass sass/gumby.scss css/gumby.css --include-path=node_modules --output-style=compact"
+        "build": "sass sass/gumby.scss css/gumby.css --style=compressed --load-path=./node_modules"
     },
     "dependencies": {
         "compass-mixins-fixed": "^1.0.1",
