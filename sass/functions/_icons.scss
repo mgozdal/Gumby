@@ -24,7 +24,7 @@
       @include i($i);
     }
   }
-  @elseif ($icon == all) {
+  @else if ($icon == all) {
     @each $icon in $entypo-icons {
       @include i(nth($icon, 1));
     }

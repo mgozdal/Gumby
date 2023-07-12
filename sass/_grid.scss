@@ -82,7 +82,7 @@
             @extend %pull-100-percent;
           }
         }
-        @elseif $j == 1 {
+        @else if $j == 1 {
           &.one.column {
             margin-left: pull_x($i, $j);
             &:first-child {
@@ -149,7 +149,7 @@
             @extend %pull-100-percent;
           }
         }
-        @elseif $j == 1 {
+        @else if $j == 1 {
           &.one.column {
             margin-left: pull_x($i, $j, true);
             &:first-child {

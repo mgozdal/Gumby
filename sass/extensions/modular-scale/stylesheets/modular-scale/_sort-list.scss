@@ -35,7 +35,7 @@
     }
     
     // Check if the B value is smaller
-    @elseif nth($A, $A-counter) > nth($B, $B-counter) {
+    @else if nth($A, $A-counter) > nth($B, $B-counter) {
       $Return: join($Return, nth($B, $B-counter));
       $B-counter: $B-counter + 1;
     }

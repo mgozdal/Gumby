@@ -121,7 +121,7 @@
       }
     }
   }
-  @elseif $direction == none {
+  @else if $direction == none {
     @extend %pull-none;
   }
   @else {
