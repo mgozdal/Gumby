@@ -13,8 +13,8 @@
   font-weight: $button-font-weight;
   padding: 0 !important;
   text-align: center;
-  .pretty & { @extend .pretty.btn; }
-  .metro & { @extend .metro.btn; }
+  .pretty & { @extend .pretty, .btn; }
+  .metro & { @extend .metro, .btn; }
 
   > a, input, button {
     display: block;
@@ -137,7 +137,7 @@
             text-shadow: 0 1px 1px lighten(nth($grade, 2), 20%);
           }
         }
-        @elseif nth($grade, 1) == warning {
+        @else if nth($grade, 1) == warning {
           color: darken(nth($grade, 2), 40%);
           a, input, button {
             text-shadow: 0 1px 1px lighten(nth($grade, 2), 20%);
